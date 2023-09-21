@@ -1,9 +1,8 @@
 {
-  "name": "messenger-ui",
+  "name": "messenger-ui-demo",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pikachuducvu.github.io/messenger-ui-demo",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
