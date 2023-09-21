@@ -25,6 +25,9 @@ export const ConvoDetail = ({
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
 
   const handleSend = useCallback(() => {
+    if (!txt) {
+      return;
+    }
     setTxt("");
     onMessageSent(txt);
   }, [txt, onMessageSent]);
@@ -69,7 +72,10 @@ export const ConvoDetail = ({
               }
               value={txt}
             />
-            <button className="bg-blue-400 rounded-lg p-2 float-right">
+            <button
+              className="bg-blue-400 rounded-lg p-2 float-right"
+              onClick={handleSend}
+            >
               Send
             </button>
           </div>
